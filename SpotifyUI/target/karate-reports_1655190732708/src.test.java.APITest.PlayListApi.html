@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("de146351-85d7-41fc-8a09-8de017330d7b",{name:"myyil"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>src.test.java.APITest.PlayListApi</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-06-14 10:08:27 ÖÖ</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:5]"><span>[1:5]</span> <span>Add Play List</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:24]"><span>[2:24]</span> <span>Shearch Music</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:35]"><span>[3:35]</span> <span>PlayList Listele ve Id al</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:49]"><span>[4:49]</span> <span>Id si alınan listeye şarkı ekle</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/APITest/PlayListApi.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Spotify API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:5]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">SenaryoBir</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:5]</span>
+                <span class="scenario-name">Add Play List</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>685</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">28</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.8">{&quot;name&quot;:&quot;Mentor Labs API&quot;,&quot;description&quot;:&quot;New playlist description&quot;,&quot;public&quot;:true},</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &quot;Bearer BQDzGNeDtXkoS5yJ7SNhcCMfEtbgBDRKuFObUIrpBx-lFcCRqUFUm6TdBOusu8RC00oXaybFV3UkdNRloJmAPAzbsrX0lO7WbLE-FYdRbzstwQIv30hIrWra97nNbGhPZyNsn4rjUJfF-2GaoTufp4run6fGOSz7ytAihe6zERDmECjW8NVoVaeu-3oBpIUunB3ZsNn8QsVjtRmjhYKA-LPGjhXL7BaJuLVr&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">55</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.spotify.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>path &#39;/v1/users/31hdbhs23eghq3nkv3ves3vn3gve/playlists&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">577</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">10:08:26.162 request:
+1 &gt; POST https://api.spotify.com/v1/users/31hdbhs23eghq3nkv3ves3vn3gve/playlists
+1 &gt; Authorization: Bearer BQDzGNeDtXkoS5yJ7SNhcCMfEtbgBDRKuFObUIrpBx-lFcCRqUFUm6TdBOusu8RC00oXaybFV3UkdNRloJmAPAzbsrX0lO7WbLE-FYdRbzstwQIv30hIrWra97nNbGhPZyNsn4rjUJfF-2GaoTufp4run6fGOSz7ytAihe6zERDmECjW8NVoVaeu-3oBpIUunB3ZsNn8QsVjtRmjhYKA-LPGjhXL7BaJuLVr
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 81
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/18)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Mentor Labs API&quot;,&quot;description&quot;:&quot;New playlist description&quot;,&quot;public&quot;:true}
+
+10:08:26.551 response time in milliseconds: 387
+1 &lt; 201
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; cache-control: private, max-age=0
+1 &lt; location: https://api.spotify.com/v1/playlists/4u73sKDkMrmaZyQAQmbTqi
+1 &lt; x-robots-tag: noindex, nofollow
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; date: Tue, 14 Jun 2022 07:08:27 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+{
+  &quot;collaborative&quot; : false,
+  &quot;description&quot; : &quot;New playlist description&quot;,
+  &quot;external_urls&quot; : {
+    &quot;spotify&quot; : &quot;https://open.spotify.com/playlist/4u73sKDkMrmaZyQAQmbTqi&quot;
+  },
+  &quot;followers&quot; : {
+    &quot;href&quot; : null,
+    &quot;total&quot; : 0
+  },
+  &quot;href&quot; : &quot;https://api.spotify.com/v1/playlists/4u73sKDkMrmaZyQAQmbTqi&quot;,
+  &quot;id&quot; : &quot;4u73sKDkMrmaZyQAQmbTqi&quot;,
+  &quot;images&quot; : [ ],
+  &quot;name&quot; : &quot;Mentor Labs API&quot;,
+  &quot;owner&quot; : {
+    &quot;display_name&quot; : &quot;MUSTAFA&quot;,
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/user/31hdbhs23eghq3nkv3ves3vn3gve&quot;
+    },
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/users/31hdbhs23eghq3nkv3ves3vn3gve&quot;,
+    &quot;id&quot; : &quot;31hdbhs23eghq3nkv3ves3vn3gve&quot;,
+    &quot;type&quot; : &quot;user&quot;,
+    &quot;uri&quot; : &quot;spotify:user:31hdbhs23eghq3nkv3ves3vn3gve&quot;
+  },
+  &quot;primary_color&quot; : null,
+  &quot;public&quot; : true,
+  &quot;snapshot_id&quot; : &quot;MSxmZjQ4ODZiNDQ5NzViYTc1MzAzNDc2ZmUwNzQ5NDQxMWUwMDU3OWZh&quot;,
+  &quot;tracks&quot; : {
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/playlists/4u73sKDkMrmaZyQAQmbTqi/tracks&quot;,
+    &quot;items&quot; : [ ],
+    &quot;limit&quot; : 100,
+    &quot;next&quot; : null,
+    &quot;offset&quot; : 0,
+    &quot;previous&quot; : null,
+    &quot;total&quot; : 0
+  },
+  &quot;type&quot; : &quot;playlist&quot;,
+  &quot;uri&quot; : &quot;spotify:playlist:4u73sKDkMrmaZyQAQmbTqi&quot;
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>assert responseTime&lt;5000</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">SenaryoIki</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:24]</span>
+                <span class="scenario-name">Shearch Music</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>196</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &quot;Bearer BQDzGNeDtXkoS5yJ7SNhcCMfEtbgBDRKuFObUIrpBx-lFcCRqUFUm6TdBOusu8RC00oXaybFV3UkdNRloJmAPAzbsrX0lO7WbLE-FYdRbzstwQIv30hIrWra97nNbGhPZyNsn4rjUJfF-2GaoTufp4run6fGOSz7ytAihe6zERDmECjW8NVoVaeu-3oBpIUunB3ZsNn8QsVjtRmjhYKA-LPGjhXL7BaJuLVr&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.spotify.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>path &#39;/v1/search&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param q = &#39;remaster%20track:Doxy+artist:Miles%20Davis&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param type = &#39;track&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">194</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.30">10:08:26.567 request:
+1 &gt; GET https://api.spotify.com/v1/search?q=remaster%2520track%3ADoxy%2Bartist%3AMiles%2520Davis&amp;type=track
+1 &gt; Authorization: Bearer BQDzGNeDtXkoS5yJ7SNhcCMfEtbgBDRKuFObUIrpBx-lFcCRqUFUm6TdBOusu8RC00oXaybFV3UkdNRloJmAPAzbsrX0lO7WbLE-FYdRbzstwQIv30hIrWra97nNbGhPZyNsn4rjUJfF-2GaoTufp4run6fGOSz7ytAihe6zERDmECjW8NVoVaeu-3oBpIUunB3ZsNn8QsVjtRmjhYKA-LPGjhXL7BaJuLVr
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/18)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:08:26.760 response time in milliseconds: 193
+1 &lt; 200
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; cache-control: public, max-age=7200
+1 &lt; x-robots-tag: noindex, nofollow
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; date: Tue, 14 Jun 2022 07:08:27 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+{
+  &quot;tracks&quot; : {
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/search?query=remaster%2520track%3ADoxy%2Bartist%3AMiles%2520Davis&amp;type=track&amp;offset=0&amp;limit=20&quot;,
+    &quot;items&quot; : [ ],
+    &quot;limit&quot; : 20,
+    &quot;next&quot; : null,
+    &quot;offset&quot; : 0,
+    &quot;previous&quot; : null,
+    &quot;total&quot; : 0
+  }
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>assert responseTime&lt;5000</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:35]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">UcuncuSenaryo</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:35]</span>
+                <span class="scenario-name">PlayList Listele ve Id al</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>249</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &quot;Bearer BQDzGNeDtXkoS5yJ7SNhcCMfEtbgBDRKuFObUIrpBx-lFcCRqUFUm6TdBOusu8RC00oXaybFV3UkdNRloJmAPAzbsrX0lO7WbLE-FYdRbzstwQIv30hIrWra97nNbGhPZyNsn4rjUJfF-2GaoTufp4run6fGOSz7ytAihe6zERDmECjW8NVoVaeu-3oBpIUunB3ZsNn8QsVjtRmjhYKA-LPGjhXL7BaJuLVr&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.spotify.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>path &#39;/v1/users/31hdbhs23eghq3nkv3ves3vn3gve/playlists&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">218</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.41">10:08:26.766 request:
+1 &gt; GET https://api.spotify.com/v1/users/31hdbhs23eghq3nkv3ves3vn3gve/playlists
+1 &gt; Authorization: Bearer BQDzGNeDtXkoS5yJ7SNhcCMfEtbgBDRKuFObUIrpBx-lFcCRqUFUm6TdBOusu8RC00oXaybFV3UkdNRloJmAPAzbsrX0lO7WbLE-FYdRbzstwQIv30hIrWra97nNbGhPZyNsn4rjUJfF-2GaoTufp4run6fGOSz7ytAihe6zERDmECjW8NVoVaeu-3oBpIUunB3ZsNn8QsVjtRmjhYKA-LPGjhXL7BaJuLVr
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/18)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:08:26.981 response time in milliseconds: 215
+1 &lt; 200
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; cache-control: public, max-age=0
+1 &lt; etag: &quot;MC-ImY1YTU0MzlmMjMyNDI1YTcxNDI2Njc0ZTk0MDMyZmM2Ig==&quot;
+1 &lt; x-robots-tag: noindex, nofollow
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; date: Tue, 14 Jun 2022 07:08:27 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+{
+  &quot;href&quot; : &quot;https://api.spotify.com/v1/users/31hdbhs23eghq3nkv3ves3vn3gve/playlists?offset=0&amp;limit=20&quot;,
+  &quot;items&quot; : [ {
+    &quot;collaborative&quot; : false,
+    &quot;description&quot; : &quot;New playlist description&quot;,
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/playlist/4u73sKDkMrmaZyQAQmbTqi&quot;
+    },
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/playlists/4u73sKDkMrmaZyQAQmbTqi&quot;,
+    &quot;id&quot; : &quot;4u73sKDkMrmaZyQAQmbTqi&quot;,
+    &quot;images&quot; : [ ],
+    &quot;name&quot; : &quot;Mentor Labs API&quot;,
+    &quot;owner&quot; : {
+      &quot;display_name&quot; : &quot;MUSTAFA&quot;,
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/user/31hdbhs23eghq3nkv3ves3vn3gve&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/users/31hdbhs23eghq3nkv3ves3vn3gve&quot;,
+      &quot;id&quot; : &quot;31hdbhs23eghq3nkv3ves3vn3gve&quot;,
+      &quot;type&quot; : &quot;user&quot;,
+      &quot;uri&quot; : &quot;spotify:user:31hdbhs23eghq3nkv3ves3vn3gve&quot;
+    },
+    &quot;primary_color&quot; : null,
+    &quot;public&quot; : true,
+    &quot;snapshot_id&quot; : &quot;Miw5OTE0M2I0Mzc2MGYwZGQ3ZTkwMjkzZTliNTI0ZmZlZDc4Zjc3MDg4&quot;,
+    &quot;tracks&quot; : {
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/playlists/4u73sKDkMrmaZyQAQmbTqi/tracks&quot;,
+      &quot;total&quot; : 0
+    },
+    &quot;type&quot; : &quot;playlist&quot;,
+    &quot;uri&quot; : &quot;spotify:playlist:4u73sKDkMrmaZyQAQmbTqi&quot;
+  }, {
+    &quot;collaborative&quot; : false,
+    &quot;description&quot; : &quot;&quot;,
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/playlist/0hgvwH3Y8ATKuhy0R4UqGA&quot;
+    },
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/playlists/0hgvwH3Y8ATKuhy0R4UqGA&quot;,
+    &quot;id&quot; : &quot;0hgvwH3Y8ATKuhy0R4UqGA&quot;,
+    &quot;images&quot; : [ ],
+    &quot;name&quot; : &quot;Mentor Labs API&quot;,
+    &quot;owner&quot; : {
+      &quot;display_name&quot; : &quot;MUSTAFA&quot;,
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/user/31hdbhs23eghq3nkv3ves3vn3gve&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/users/31hdbhs23eghq3nkv3ves3vn3gve&quot;,
+      &quot;id&quot; : &quot;31hdbhs23eghq3nkv3ves3vn3gve&quot;,
+      &quot;type&quot; : &quot;user&quot;,
+      &quot;uri&quot; : &quot;spotify:user:31hdbhs23eghq3nkv3ves3vn3gve&quot;
+    },
+    &quot;primary_color&quot; : null,
+    &quot;public&quot; : true,
+    &quot;snapshot_id&quot; : &quot;MSxlMGNmMzU1NmU5OGM0Y2JiNzc2NGE2NDYwMDIxZmU0OGUxMzgyYzM2&quot;,
+    &quot;tracks&quot; : {
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/playlists/0hgvwH3Y8ATKuhy0R4UqGA/tracks&quot;,
+      &quot;total&quot; : 0
+    },
+    &quot;type&quot; : &quot;playlist&quot;,
+    &quot;uri&quot; : &quot;spotify:playlist:0hgvwH3Y8ATKuhy0R4UqGA&quot;
+  }, {
+    &quot;collaborative&quot; : false,
+    &quot;description&quot; : &quot;&quot;,
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/playlist/7tjf3Dhc5Ml1qLBHeii3zE&quot;
+    },
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/playlists/7tjf3Dhc5Ml1qLBHeii3zE&quot;,
+    &quot;id&quot; : &quot;7tjf3Dhc5Ml1qLBHeii3zE&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : null,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67706c0000bebb32a51da92f198b877ebdb91f&quot;,
+      &quot;width&quot; : null
+    } ],
+    &quot;name&quot; : &quot;MUSTAFA2&quot;,
+    &quot;owner&quot; : {
+      &quot;display_name&quot; : &quot;MUSTAFA&quot;,
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/user/31hdbhs23eghq3nkv3ves3vn3gve&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/users/31hdbhs23eghq3nkv3ves3vn3gve&quot;,
+      &quot;id&quot; : &quot;31hdbhs23eghq3nkv3ves3vn3gve&quot;,
+      &quot;type&quot; : &quot;user&quot;,
+      &quot;uri&quot; : &quot;spotify:user:31hdbhs23eghq3nkv3ves3vn3gve&quot;
+    },
+    &quot;primary_color&quot; : null,
+    &quot;public&quot; : true,
+    &quot;snapshot_id&quot; : &quot;MzgzLGJlNmUzMGRkZDZiN2M0NjJmMGI3YTRhM2IxMWE3YTVmYjc2NzI3Yjg=&quot;,
+    &quot;tracks&quot; : {
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/playlists/7tjf3Dhc5Ml1qLBHeii3zE/tracks&quot;,
+      &quot;total&quot; : 180
+    },
+    &quot;type&quot; : &quot;playlist&quot;,
+    &quot;uri&quot; : &quot;spotify:playlist:7tjf3Dhc5Ml1qLBHeii3zE&quot;
+  }, {
+    &quot;collaborative&quot; : false,
+    &quot;description&quot; : &quot;&quot;,
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/playlist/4HT5Z3QaeeKzemqmwIUsSp&quot;
+    },
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/playlists/4HT5Z3QaeeKzemqmwIUsSp&quot;,
+    &quot;id&quot; : &quot;4HT5Z3QaeeKzemqmwIUsSp&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/7d88640c02679a876eaaddef73b9584c053c2d30&quot;,
+      &quot;width&quot; : 640
+    } ],
+    &quot;name&quot; : &quot;Kayıt&quot;,
+    &quot;owner&quot; : {
+      &quot;display_name&quot; : &quot;MUSTAFA&quot;,
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/user/31hdbhs23eghq3nkv3ves3vn3gve&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/users/31hdbhs23eghq3nkv3ves3vn3gve&quot;,
+      &quot;id&quot; : &quot;31hdbhs23eghq3nkv3ves3vn3gve&quot;,
+      &quot;type&quot; : &quot;user&quot;,
+      &quot;uri&quot; : &quot;spotify:user:31hdbhs23eghq3nkv3ves3vn3gve&quot;
+    },
+    &quot;primary_color&quot; : null,
+    &quot;public&quot; : true,
+    &quot;snapshot_id&quot; : &quot;MixkMjlkYjAzOGNjMTQ0ZDRhMjc5M2NhZTUzZDRlN2NlOTFhMzY2YzE1&quot;,
+    &quot;tracks&quot; : {
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/playlists/4HT5Z3QaeeKzemqmwIUsSp/tracks&quot;,
+      &quot;total&quot; : 1
+    },
+    &quot;type&quot; : &quot;playlist&quot;,
+    &quot;uri&quot; : &quot;spotify:playlist:4HT5Z3QaeeKzemqmwIUsSp&quot;
+  }, {
+    &quot;collaborative&quot; : false,
+    &quot;description&quot; : &quot;&quot;,
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/playlist/67MOP43XI3siBTqs5Cxkb6&quot;
+    },
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/playlists/67MOP43XI3siBTqs5Cxkb6&quot;,
+    &quot;id&quot; : &quot;67MOP43XI3siBTqs5Cxkb6&quot;,
+    &quot;images&quot; : [ ],
+    &quot;name&quot; : &quot;SPOR&quot;,
+    &quot;owner&quot; : {
+      &quot;display_name&quot; : &quot;MUSTAFA&quot;,
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/user/31hdbhs23eghq3nkv3ves3vn3gve&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/users/31hdbhs23eghq3nkv3ves3vn3gve&quot;,
+      &quot;id&quot; : &quot;31hdbhs23eghq3nkv3ves3vn3gve&quot;,
+      &quot;type&quot; : &quot;user&quot;,
+      &quot;uri&quot; : &quot;spotify:user:31hdbhs23eghq3nkv3ves3vn3gve&quot;
+    },
+    &quot;primary_color&quot; : null,
+    &quot;public&quot; : true,
+    &quot;snapshot_id&quot; : &quot;MSxmNWI1YmJiY2FmNjgwOTA1Nzk1NWM3MzE0MGNiZDRkYmMxOWEyMzBi&quot;,
+    &quot;tracks&quot; : {
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/playlists/67MOP43XI3siBTqs5Cxkb6/tracks&quot;,
+      &quot;total&quot; : 0
+    },
+    &quot;type&quot; : &quot;playlist&quot;,
+    &quot;uri&quot; : &quot;spotify:playlist:67MOP43XI3siBTqs5Cxkb6&quot;
+  } ],
+  &quot;limit&quot; : 20,
+  &quot;next&quot; : null,
+  &quot;offset&quot; : 0,
+  &quot;previous&quot; : null,
+  &quot;total&quot; : 5
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def listId = response.items[0].id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def listName = response.items[0].name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print listId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.45">10:08:27.014 [print] 4u73sKDkMrmaZyQAQmbTqi 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print listName</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.46">10:08:27.014 [print] Mentor Labs API 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:49]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">SenaryoDort</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:49]</span>
+                <span class="scenario-name">Id si alınan listeye şarkı ekle</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>10</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header Authorization = &quot;Bearer BQDzGNeDtXkoS5yJ7SNhcCMfEtbgBDRKuFObUIrpBx-lFcCRqUFUm6TdBOusu8RC00oXaybFV3UkdNRloJmAPAzbsrX0lO7WbLE-FYdRbzstwQIv30hIrWra97nNbGhPZyNsn4rjUJfF-2GaoTufp4run6fGOSz7ytAihe6zERDmECjW8NVoVaeu-3oBpIUunB3ZsNn8QsVjtRmjhYKA-LPGjhXL7BaJuLVr&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.spotify.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref failed">52</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>def listId2 = call read(&#39;PlayListApi.feature@UcuncuSenaryo.listId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.52">10:08:27.027 src/test/java/APITest/PlayListApi.feature:52
+And def listId2 = call read(&#39;PlayListApi.feature@UcuncuSenaryo.listId&#39;)
+Cannot invoke &quot;com.intuit.karate.core.Config.detach()&quot; because the return value of &quot;com.intuit.karate.core.FeatureResult.getConfig()&quot; is null
+src/test/java/APITest/PlayListApi.feature:52
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.52.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.APITest.PlayListApi</div>
+      </div>
+      <div class="time-cell passed">0</div>
+    </div>
+        
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref skipped">53</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>path &#39;/v1/playlists/listId2/tracks&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref skipped">54</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref skipped">55</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>param uris = &#39;spotify:track:3807e42428663846&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref skipped">56</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

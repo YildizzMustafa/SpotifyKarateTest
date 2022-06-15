@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("de146351-85d7-41fc-8a09-8de017330d7b",{name:"myyil"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>src.test.java.APITest.PlayListApi</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-06-13 03:24:02 ÖÖ</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Add Play List</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/APITest/PlayListApi.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Spotify API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Add Play List</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>826</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://open.spotify.com/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">72</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;data.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">76</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path 	&#39;/v1/users/31hdbhs23eghq3nkv3ves3vn3gve/playlists&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">663</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">03:24:02.450 request:
+1 &gt; POST https://open.spotify.com/v1/users/31hdbhs23eghq3nkv3ves3vn3gve/playlists
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 972
+1 &gt; Host: open.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/18)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;collaborative&quot;:false,&quot;description&quot;:&quot;New playlist description&quot;,&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https:\/\/open.spotify.com\/playlist\/3zdXJkJwiaF7NKPHeEfERF&quot;},&quot;followers&quot;:{&quot;href&quot;:null,&quot;total&quot;:0},&quot;href&quot;:&quot;https:\/\/api.spotify.com\/v1\/playlists\/3zdXJkJwiaF7NKPHeEfERF&quot;,&quot;id&quot;:&quot;3zdXJkJwiaF7NKPHeEfERF&quot;,&quot;images&quot;:[],&quot;name&quot;:&quot;New Playlist&quot;,&quot;owner&quot;:{&quot;display_name&quot;:&quot;MUSTAFA&quot;,&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https:\/\/open.spotify.com\/user\/31hdbhs23eghq3nkv3ves3vn3gve&quot;},&quot;href&quot;:&quot;https:\/\/api.spotify.com\/v1\/users\/31hdbhs23eghq3nkv3ves3vn3gve&quot;,&quot;id&quot;:&quot;31hdbhs23eghq3nkv3ves3vn3gve&quot;,&quot;type&quot;:&quot;user&quot;,&quot;uri&quot;:&quot;spotify:user:31hdbhs23eghq3nkv3ves3vn3gve&quot;},&quot;primary_color&quot;:null,&quot;public&quot;:true,&quot;snapshot_id&quot;:&quot;MSwyM2FiZjlmMjIxZWVlYzEzZmViOTBmZjAxMTc2Y2Y0ZGZhYjZlMWYz&quot;,&quot;tracks&quot;:{&quot;href&quot;:&quot;https:\/\/api.spotify.com\/v1\/playlists\/3zdXJkJwiaF7NKPHeEfERF\/tracks&quot;,&quot;items&quot;:[],&quot;limit&quot;:100,&quot;next&quot;:null,&quot;offset&quot;:0,&quot;previous&quot;:null,&quot;total&quot;:0},&quot;type&quot;:&quot;playlist&quot;,&quot;uri&quot;:&quot;spotify:playlist:3zdXJkJwiaF7NKPHeEfERF&quot;}
+
+03:24:02.847 response time in milliseconds: 392
+1 &lt; 404
+1 &lt; date: Mon, 13 Jun 2022 00:24:04 GMT
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; vary: Accept-Encoding,Accept-Encoding
+1 &lt; sp-trace-id: 0065ea8dd79e9e38
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Set-Cookie: sp_landing=https%3A%2F%2Fopen.spotify.com%2Fv1%2Fusers%2F31hdbhs23eghq3nkv3ves3vn3gve%2Fplaylists%3Fsp_cid%3D5bde6b98a780d14ad5735663cb8b78e9%26device%3Ddesktop; Max-Age=1655166244000; Expires=Fri, 29 Jul 54472 17:30:42 GMT; Domain=spotify.com; Secure
+1 &lt; Set-Cookie: sp_t=5bde6b98a780d14ad5735663cb8b78e9; Max-Age=1686615844000; Expires=Fri, 05 Mar 55469 17:30:42 GMT; Domain=spotify.com; Secure
+{&quot;error&quot;:{&quot;code&quot;:404,&quot;message&quot;:&quot;Not Found&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">03:24:02.854 src/test/java/APITest/PlayListApi.feature:14
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 392, url: https://open.spotify.com/v1/users/31hdbhs23eghq3nkv3ves3vn3gve/playlists, response: 
+{&quot;error&quot;:{&quot;code&quot;:404,&quot;message&quot;:&quot;Not Found&quot;}}
+src/test/java/APITest/PlayListApi.feature:14
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref skipped">15</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>assert responseTime&lt;5000</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

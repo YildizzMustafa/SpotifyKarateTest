@@ -1,0 +1,56 @@
+{
+
+
+  "CalmaListesiAdi": {
+    "listeAdi":{
+      "ad": "MentorLabs"
+
+    }
+  },
+
+
+  "LoginData": {
+    "userBilgi": {
+      "username": "myyildiz1997@gmail.com",
+      "password": "Bitcoin2021!"
+    }
+  },
+
+  "Music": {
+    "music": {
+            "Muzikname": "Daft Punk"
+          }
+  },
+
+
+  "Selector": {
+    "LoginSelector": {
+      "oturumAcButton": ".Button-qlcn5g-0.jvEinx",
+      "userName": "#login-username",
+      "password": "#login-password",
+      "loginButton": "#login-button"
+
+    },
+
+
+    "HomePageSelector": {
+      "calmaListesiOlustur": ".IPVjkkhh06nan7aZK7Bx",
+      "nameClick": ".Type__TypeElement-goli3j-0.hVBZRJ",
+      "nameBlok": ".f0GjZQZc4c_bKpqdyKbq.JaGLdeBa2UaUMBT44vqI",
+      "kaydetButton": ".ButtonInner-sc-14ud5tc-0.iebPZv.encore-inverted-light-set"
+    },
+
+
+    "AddMusicSelector": {
+      "searchMusic": ".Type__TypeElement-goli3j-0.ebHsEf.l42JW4EP_5CU1Ba7jYIc",
+      "addButton": ".HcMOFLaukKJdK5LfdHh0>.Button-y0gtbx-0.jjUWAm",
+      "eklemeKontrol": ".Type__TypeElement-goli3j-0.gAmaez.VrRwdIZO0sRX1lsWxJBe"
+
+    }
+
+  }
+
+
+
+
+}

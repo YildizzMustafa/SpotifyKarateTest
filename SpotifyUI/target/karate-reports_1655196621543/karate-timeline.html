@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/APITest\/PlayListApi[1:5]","start":1655193471689,"end":1655193472368,"title":"src\/test\/java\/APITest\/PlayListApi[1:5] 10:57:51.689-10:57:52.368 Add Play List"},{"id":2,"group":1,"content":"src\/test\/java\/APITest\/PlayListApi[2:24]","start":1655193472373,"end":1655193472539,"title":"src\/test\/java\/APITest\/PlayListApi[2:24] 10:57:52.373-10:57:52.539 Shearch Music"},{"id":3,"group":1,"content":"src\/test\/java\/APITest\/PlayListApi[3:35]","start":1655193472544,"end":1655193474221,"title":"src\/test\/java\/APITest\/PlayListApi[3:35] 10:57:52.544-10:57:54.221 PlayList Listele ve Id al","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

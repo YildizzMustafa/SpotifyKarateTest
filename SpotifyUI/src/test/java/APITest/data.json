@@ -1,0 +1,20 @@
+{
+  "RequestBody1": {
+    "requestBody1": {
+      "name": "Mentor Labs API",
+      "description": "New playlist description",
+      "public": true
+    }
+  },
+  "RequestBody2": {
+    "requestBody2": {
+    "position":0
+    }
+  },
+
+  "RequestBodyToken": {
+    "requestToken": {
+      "token": "Bearer BQA9-8PHw0lYy-orYcnUh0mIdXMccFSlEi2ThQcuD6QcleE3feVTnmYgp08YKb40cGIeLWimdkHLlfsJEU9sCR8gK7sAyGQp1Oer8r4U_XFos5bvYgvyhLaQ9t8Io4otB897OnpgQ6YYLRwWr4DbY5tZB-CTFfDq1GoduiIO93cNcMjjrqqQiPYy-HhFtSVMgKilYcMy_DjqDvfx5T7HxxH7wYfGBGx7B4p8"
+    }
+  }
+}

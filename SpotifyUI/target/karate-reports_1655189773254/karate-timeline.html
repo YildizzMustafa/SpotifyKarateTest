@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/APITest\/PlayListApi[1:5]","start":1655189133660,"end":1655189134552,"title":"src\/test\/java\/APITest\/PlayListApi[1:5] 09:45:33.660-09:45:34.552 Add Play List"},{"id":2,"group":1,"content":"src\/test\/java\/APITest\/PlayListApi[2:24]","start":1655189134557,"end":1655189134820,"title":"src\/test\/java\/APITest\/PlayListApi[2:24] 09:45:34.557-09:45:34.820 Shearch Music"},{"id":3,"group":1,"content":"src\/test\/java\/APITest\/PlayListApi[3:35]","start":1655189134823,"end":1655189135113,"title":"src\/test\/java\/APITest\/PlayListApi[3:35] 09:45:34.823-09:45:35.113 PlayList Listele ve Id al"},{"id":4,"group":1,"content":"src\/test\/java\/APITest\/PlayListApi[4:48]","start":1655189135116,"end":1655189135129,"title":"src\/test\/java\/APITest\/PlayListApi[4:48] 09:45:35.116-09:45:35.129 Id si alınan listeye şarkı ekle","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
