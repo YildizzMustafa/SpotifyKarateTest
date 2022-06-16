@@ -10,7 +10,7 @@ Background:
 
     Given header Authorization = data.RequestBodyToken.requestToken
     Given url 'https://api.spotify.com'
-    When path '/v1/users/31hdbhs23eghq3nkv3ves3vn3gve/playlists'
+    When path '/v1/users/"Lütfen Buraya Kullanıcı Id Giriniz"/playlists'
     And request data.RequestBody1.requestBody1
     And method POST
     Then status 201
